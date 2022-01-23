@@ -1,7 +1,6 @@
 import chai, { expect } from 'chai'
 import { solidity, MockProvider, deployContract } from 'ethereum-waffle'
-import { Contract, constants } from 'ethers'
-import { BigNumber } from 'ethers/utils'
+import { Contract, BigNumber, constants } from 'ethers'
 const {  MaxUint256 } = constants
 import ITANPair from '../build/ITANPair.json'
 
@@ -18,7 +17,7 @@ const overrides = {
 }
 
 describe('TANRouter', () => {
-  const provider = new MockProvider({options: {
+  const provider = new MockProvider({ganacheOptions: {
     hardfork: 'istanbul',
     mnemonic: 'horn horn horn horn horn horn horn horn horn horn horn horn',
     gasLimit: 9999999

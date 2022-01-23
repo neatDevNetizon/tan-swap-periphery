@@ -1,8 +1,9 @@
+// SPDX-License-Identifier: GEO
 pragma solidity >=0.5.0;
 
-import '../../../tan-swap-core/contracts/interfaces/ITANPair.sol';
-
+import '../interfaces/ITANPair.sol';
 import "./SafeMath.sol";
+
 
 library TANLibrary {
     using SafeMath for uint;

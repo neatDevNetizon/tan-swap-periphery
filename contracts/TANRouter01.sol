@@ -1,12 +1,13 @@
+// SPDX-License-Identifier: GEO
 pragma solidity =0.6.6;
 
-import '../../tan-swap-core/contracts/interfaces/ITANFactory.sol';
-import '@uniswap/lib/contracts/libraries/TransferHelper.sol';
-
+import './interfaces/ITANFactory.sol';
+import './libraries/TransferHelper.sol';
 import './libraries/TANLibrary.sol';
 import './interfaces/ITANRouter01.sol';
 import './interfaces/IERC20.sol';
 import './interfaces/IWETH.sol';
+
 
 contract TANRouter01 is ITANRouter01 {
     address public immutable override factory;

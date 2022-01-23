@@ -1,7 +1,9 @@
+// SPDX-License-Identifier: GEO
 pragma solidity >=0.5.0;
 
-import '../../../tan-swap-core/contracts/interfaces/ITANPair.sol';
-import '@uniswap/lib/contracts/libraries/FixedPoint.sol';
+import '../interfaces/ITANPair.sol';
+import './FixedPoint.sol';
+
 
 // library with helper methods for oracles that are concerned with computing average prices
 library TANOracleLibrary {

@@ -1,4 +1,6 @@
+// SPDX-License-Identifier: GEO
 pragma solidity >=0.5.0;
+
 
 interface ITANV1Exchange {
     function balanceOf(address owner) external view returns (uint);

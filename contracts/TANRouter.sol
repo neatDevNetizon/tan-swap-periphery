@@ -1,12 +1,14 @@
+// SPDX-License-Identifier: GEO
 pragma solidity =0.6.6;
 
-import '../../tan-swap-core/contracts/interfaces/ITANFactory.sol';
-import '@uniswap/lib/contracts/libraries/TransferHelper.sol';
+import './libraries/TransferHelper.sol';
 import './interfaces/ITANRouter02.sol';
 import './libraries/TANLibrary.sol';
 import './libraries/SafeMath.sol';
+import './interfaces/ITANFactory.sol';
 import './interfaces/IERC20.sol';
 import './interfaces/IWETH.sol';
+
 
 contract TANRouter is ITANRouter02 {
     using SafeMath for uint;

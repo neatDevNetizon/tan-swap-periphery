@@ -1,12 +1,13 @@
+// SPDX-License-Identifier: GEO
 pragma solidity =0.6.6;
 
-import '@uniswap/lib/contracts/libraries/TransferHelper.sol';
-
+import './libraries/TransferHelper.sol';
 import './interfaces/ITANMigrator.sol';
 import './interfaces/V1/ITANV1Factory.sol';
 import './interfaces/V1/ITANV1Exchange.sol';
 import './interfaces/ITANRouter01.sol';
 import './interfaces/IERC20.sol';
+
 
 contract TANMigrator is ITANMigrator {
     ITANV1Factory immutable factoryV1;
